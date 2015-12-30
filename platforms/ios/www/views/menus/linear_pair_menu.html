@@ -1,0 +1,41 @@
+<div class="menu_linear_pair">
+    <div class="row displayTable row-no-padding">
+        <div class="col displayCell">
+
+            <div class="row text-center marginTopZero row-no-padding itemsBg"
+                 ng-repeat="n in _.range(0, (_.size(menu.content) / 2))">
+                <div class="col col-50">
+                    <a ng-show="menu.content[$index*2].type == 'link'"
+                       ng-click="SimpleTools.openLink('{{menu.content[$index*2].url}}')">
+                        <div class="img_container">
+                            <img ng-src="{{menu.content[$index*2].icon}}" alt="{{menu.content[$index*2].icon}}"/>
+                        </div>
+                        <div class="menuName">{{menu.content[$index*2].title}}</div>
+                    </a>
+                    <a ng-show="menu.content[$index*2].type != 'link'" href="{{menu.content[$index*2].url}}">
+                        <div class="img_container">
+                            <img ng-src="{{menu.content[$index*2].icon}}" alt="{{menu.content[$index*2].icon}}"/>
+                        </div>
+                        <div class="menuName">{{menu.content[$index*2].title}}</div>
+                    </a>
+                </div>
+                <div class="col col-50" ng-if="menu.content[$index*2 +1] != undefined">
+                    <a ng-show="menu.content[$index*2 +1].type == 'link'"
+                       ng-click="SimpleTools.openLink('{{menu.content[$index*2 +1].url}}')">
+                        <div class="img_container">
+                            <img ng-src="{{menu.content[$index*2 +1].icon}}" alt="{{menu.content[$index*2 +1].icon}}"/>
+                        </div>
+                        <div class="menuName">{{menu.content[$index*2+1].title}}</div>
+                    </a>
+                    <a ng-show="menu.content[$index*2 +1].type != 'link'" href="{{menu.content[$index*2 +1].url}}">
+                        <div class="img_container">
+                            <img ng-src="{{menu.content[$index*2 +1].icon}}" alt="{{menu.content[$index*2 +1].icon}}"/>
+                        </div>
+                        <div class="menuName">{{menu.content[$index*2+1].title}}</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

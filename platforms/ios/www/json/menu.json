@@ -1,0 +1,21 @@
+{
+             "menu": {
+             "type": "linear",
+             "background_image": "img/background.jpg",
+             "background_color": "#ccc",
+             "content": [
+    {
+        "title": "cdvfbgn",
+        "icon": "img/a2d22a192a73e34fd5a020c8eafe50f6.jpg",
+        "type": "contacts_list",
+        "url": "#/contacts_list/1"
+    },
+    {
+        "title": "sdfgh",
+        "icon": "img/aae916f0a6e5b212d7a1a58eaad6dc60.jpg",
+        "type": "general_list",
+        "url": "#/general_list/3"
+    }
+]
+           }
+        }

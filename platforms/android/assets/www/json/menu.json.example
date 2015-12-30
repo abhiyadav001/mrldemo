@@ -1,0 +1,51 @@
+{
+  "menu": {
+    "type": "circular",
+    "background_image": "img/background/ionic.png",
+    "background_color": "#ff4444",
+    "content": [
+      {
+        "title": "Link",
+        "icon": "img/menus/ionic.png",
+        "type": "link",
+        "url": "http://google.com"
+      },
+      {
+        "title": "Contact 1",
+        "icon": "img/menus/ionic.png",
+        "type": "contact",
+        "url": "#/contacts_list/1"
+      },
+      {
+        "title": "Contact 2",
+        "icon": "img/menus/ionic.png",
+        "type": "contact",
+        "url": "#/contacts_list/2"
+      },
+      {
+        "title": "General List 1",
+        "icon": "img/menus/ionic.png",
+        "type": "general_list",
+        "url": "#/general_list/1"
+      },
+      {
+        "title": "General List 2",
+        "icon": "img/menus/ionic.png",
+        "type": "general_list",
+        "url": "#/general_list/2"
+      },
+      {
+        "title": "General List 3",
+        "icon": "img/menus/ionic.png",
+        "type": "general_list",
+        "url": "#/general_list/2"
+      },
+      {
+        "title": "General List 4",
+        "icon": "img/menus/ionic.png",
+        "type": "general_list",
+        "url": "#/general_list/2"
+      }
+    ]
+  }
+}

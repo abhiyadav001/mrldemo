@@ -1,0 +1,15 @@
+<ion-view view-title="Map">
+    <ion-nav-bar align-title="center" class="bar-positive header-size">
+        <ion-nav-back-button class="button-icon icon ion-chevron-left">
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="has-header">
+
+        <div id="map_canvas">
+            <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
+                <ui-gmap-markers models="markers" coords="'self'" icon="'icon'">
+                </ui-gmap-markers>
+            </ui-gmap-google-map>
+        </div>
+    </ion-content>
+</ion-view>

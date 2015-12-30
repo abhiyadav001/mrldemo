@@ -1,0 +1,15 @@
+<div class="overLayFixed"></div>
+<div class="menu_linear">
+    <div class="row text-center" ng-repeat="menu in menu.content ">
+        <div class="col">
+            <a ng-show="menu.type == 'link'" ng-click="SimpleTools.openLink('{{menu.url}}')">
+                <div class="img_container"><img ng-src="{{menu.icon}}" alt="{{menu.icon}}"/></div>
+                <div class="menuName">{{menu.title}}</div>
+            </a>
+            <a ng-show="menu.type != 'link'" href="{{menu.url}}">
+                <div class="img_container"><img ng-src="{{menu.icon}}" alt="{{menu.icon}}"/></div>
+                <div class="menuName">{{menu.title}}</div>
+            </a>
+        </div>
+    </div>
+</div>
