@@ -1,0 +1,13 @@
+<ion-view hide-nav-bar="true">
+    <ion-content padding="false" scroll="true" ng-style="{background:menu.background_color }">
+        <div ng-if="menu.type == 'linear' ">
+            <linear-menu></linear-menu>
+        </div>
+        <div class="height100Pre" ng-if="menu.type == 'linear-pair' ">
+            <linear-pair-menu class="linearPairMenu"></linear-pair-menu>
+        </div>
+        <div ng-if="menu.type == 'circular' ">
+            <circular-menu></circular-menu>
+        </div>
+    </ion-content>
+</ion-view>

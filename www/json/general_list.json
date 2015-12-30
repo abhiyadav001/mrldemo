@@ -1,0 +1,120 @@
+{
+    "1": {
+        "Coffee": {
+            "icon": "img/general_list/ionic.png",
+            "list": [
+                {
+                    "title": "Anandam",
+                    "address": "Udyog vihar phase 2",
+                    "email": "gurinder@anandam.com",
+                    "contact_no": "8375878770",
+                    "images": [
+                        "img/general_list/detail-Image.jpg",
+                        "img/general_list/detail-Image.jpg",
+                        "img/general_list/detail-Image.jpg",
+                        "img/general_list/detail-Image.jpg"
+                    ]
+                },
+                {
+                    "title": "Anandam",
+                    "address": "Udyog vihar phase 2",
+                    "email": "gurinder@anandam.com",
+                    "contact_no": "8375878770",
+                    "images": [
+                      "img/general_list/detail-Image.jpg",
+                        "img/general_list/detail-Image.jpg",
+                        "img/general_list/detail-Image.jpg",
+                        "img/general_list/detail-Image.jpg"
+                    ]
+                }
+            ]
+        },
+        "Dinner": {
+            "icon": "img/general_list/ionic.png",
+            "list": [
+                {
+                    "title": "Anandam",
+                    "address": "Udyog vihar phase 2",
+                    "email": "gurinder@anandam.com",
+                    "contact_no": "8375878770",
+                    "images": [
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png"
+                    ]
+                },
+                {
+                    "title": "Anandam",
+                    "address": "Udyog vihar phase 2",
+                    "email": "gurinder@anandam.com",
+                    "contact_no": "8375878770",
+                    "images": [
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png"
+                    ]
+                }
+            ]
+        },
+        "Carpenter": {
+            "icon": "img/general_list/ionic.png",
+            "list": [
+                {
+                    "title": "Anandam",
+                    "address": "Udyog vihar phase 2",
+                    "email": "gurinder@anandam.com",
+                    "contact_no": "8375878770",
+                    "images": [
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png"
+                    ]
+                },
+                {
+                    "title": "Anandam",
+                    "address": "Udyog vihar phase 2",
+                    "email": "gurinder@anandam.com",
+                    "contact_no": "8375878770",
+                    "images": [
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png"
+                    ]
+                }
+            ]
+        },
+        "view": {
+            "icon": "img/general_list/ionic.png",
+            "list": [
+                {
+                    "title": "Anandam",
+                    "address": "Udyog vihar phase 2",
+                    "email": "gurinder@anandam.com",
+                    "contact_no": "8375878770",
+                    "images": [
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png"
+                    ]
+                },
+                {
+                    "title": "Anandam",
+                    "address": "Udyog vihar phase 2",
+                    "email": "gurinder@anandam.com",
+                    "contact_no": "8375878770",
+                    "images": [
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png",
+                        "img/general_list/ionic.png"
+                    ]
+                }
+            ]
+        }
+    }
+}

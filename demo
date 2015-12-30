@@ -1,0 +1,133 @@
+{
+    menu: {
+        type: "circular", //'circular', 'linear', 'linear_pair'
+        content: {
+            "Link": {
+                icon: "img/icon.png",
+                type: "link",
+                url: "http://google.com"
+            },
+            "Contact 1": {
+                icon: "img/icon.png",
+                type: "contact",
+                url: "#/contacts_list/1"
+            },
+            "Contact 2": {
+                icon: "img/icon.png",
+                type: "contact",
+                url: "#/contacts_list/2"
+            },
+            "General List 1": {
+                icon: "img/icon.png",
+                type: "general_list",
+                url: "#/general_list/1"
+            },
+            "General List 2": {
+                icon: "img/icon.png",
+                type: "general_list",
+                url: "#/general_list/2"
+            }
+        }
+    },
+
+    contacts_list: {
+        "1": [
+            {
+                title: "contact 1 demo",
+                profile_pic: "/img/contacts/img.png",
+                first_name: "Gurinder",
+                last_name: "Narang",
+                description: "Demo description about the contact",
+                designation: "junior",
+                email_id: "gurinder@header.com",
+                contact_no: "8375878770",
+                facebook_link: "http://facebook.com",
+                linkedin: "http://linkedin.com",
+                twitter: "http://twitter.com"
+            },
+            {
+                title: "contact 2 demo",
+                profile_pic: "/img/contacts/img.png",
+                first_name: "Gurinder",
+                last_name: "Narang",
+                description: "Demo description about the contact",
+                designation: "junior",
+                email_id: "gurinder@header.com",
+                contact_no: "8375878770",
+                facebook_link: "http://facebook.com",
+                linkedin: "http://linkedin.com",
+                twitter: "http://twitter.com"
+            }
+        ],
+        "2": [
+            {
+                title: "contact 1 demo2",
+                profile_pic: "/img/contacts/img.png",
+                first_name: "Gurinder",
+                last_name: "Narang",
+                description: "Demo description about the contact",
+                designation: "junior",
+                email_id: "gurinder@header.com",
+                contact_no: "8375878770",
+                facebook_link: "http://facebook.com",
+                linkedin: "http://linkedin.com",
+                twitter: "http://twitter.com"
+            },
+            {
+                title: "contact 2 demo2",
+                profile_pic: "/img/contacts/img.png",
+                first_name: "Gurinder",
+                last_name: "Narang",
+                description: "Demo description about the contact",
+                designation: "junior",
+                email_id: "gurinder@header.com",
+                contact_no: "8375878770",
+                facebook_link: "http://facebook.com",
+                linkedin: "http://linkedin.com",
+                twitter: "http://twitter.com"
+            }
+        ]
+    },
+    general_list: {
+        "1": {
+            icon: "img/categories/coffee.png",
+            title: "Coffee",
+            list: [
+                {
+                    title: "Anandam",
+                    address: "Udyog vihar phase 2",
+                    email: "gurinder@anandam.com",
+                    contact_no: "8375878770",
+                    images: ['img/image.png', 'img/image.png', 'img/image.png', 'img/image.png']
+                },
+                {
+                    title: "Anandam",
+                    address: "Udyog vihar phase 2",
+                    email: "gurinder@anandam.com",
+                    contact_no: "8375878770",
+                    images: ['img/image.png', 'img/image.png', 'img/image.png', 'img/image.png']
+                }
+            ]
+        },
+        "2": {
+            icon: "img/categories/coffee.png",
+            title: "Coffee",
+            list: [
+                {
+                    title: "Anandam",
+                    address: "Udyog vihar phase 2",
+                    email: "gurinder@anandam.com",
+                    contact_no: "8375878770",
+                    images: ['img/image.png', 'img/image.png', 'img/image.png', 'img/image.png']
+                },
+                {
+                    title: "Anandam",
+                    address: "Udyog vihar phase 2",
+                    email: "gurinder@anandam.com",
+                    contact_no: "8375878770",
+                    images: ['img/image.png', 'img/image.png', 'img/image.png', 'img/image.png']
+                }
+            ]
+        }
+    }
+}

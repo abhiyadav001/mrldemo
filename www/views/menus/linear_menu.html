@@ -1,0 +1,11 @@
+<div class="overLayFixed"></div>
+<div class="menu_linear">
+    <div class="row text-center" ng-repeat="menu in menu.content ">
+        <div class="col">
+            <a ng-click="openLink('{{menu.url}}')">
+                <div class="img_container"><img ng-src="{{menu.icon}}" alt="{{menu.icon}}"/></div>
+                <div class="menuName">{{menu.title}}</div>
+            </a>
+        </div>
+    </div>
+</div>

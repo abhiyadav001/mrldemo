@@ -1,0 +1,384 @@
+$black_40: rgba(0,0,0,0.4);
+$black_60: rgba(0,0,0,0.6);
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin flex($flexVal) {
+    -webkit-box-flex: $flexVal;
+    -webkit-flex: $flexVal;
+    -moz-box-flex: $flexVal;
+    -moz-flex: $flexVal;
+    -ms-flex: $flexVal;
+    flex: $flexVal;
+}
+.marginTopZero {
+    margin-top: 0 !important;
+}
+.menu_linear {
+    position: relative;
+    z-index: 1;
+    .row .col a {
+        text-decoration: none;
+        .img_container {
+            width: 80px;
+            height: 80px;
+            margin: 5px auto 4px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            background: $black_40;
+            img {
+                width: 40px;
+                margin-top: 19px;
+                border-radius: 100%;
+            }
+        }
+        .menuName {
+            color: #fff;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-top: 4px;
+        }
+    }
+}
+.overLayFixed {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    // background: rgba(0,0,0,0.5);
+    background: red;
+    z-index: 0;
+}
+.height100Pre {
+    height: 100%;
+}
+.linearPairMenu {
+    display: block;
+    height: 100%;
+}
+.menu_linear_pair {
+    height: 100%;
+    .img_container {
+        width: 80px;
+        height: 80px;
+        margin: 14px auto 4px auto;
+        border-radius: 50%;
+        overflow: hidden;
+        background: $black_40;
+        img {
+            width: 40px;
+            margin-top: 19px;
+            border-radius: 100%;
+        }
+    }
+    .menuName {
+        color: #fff;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    .itemsBg {
+        background: $black_40;
+    }
+    .displayTable {
+        display: table;
+        height: 100%;
+        .displayCell {
+            display: table-cell;
+            vertical-align: bottom;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+.menu_circular {
+    .dialerBorder {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left: 0;
+        top: 50%;
+        margin-top: -200px;
+        margin-left: -200px;
+        border-radius: 50%;
+        border: 35px solid rgba(244,63,64,0.50);
+        z-index: 2;
+        box-shadow: 10px 10px 5px 1200px rgba(0,0,0,0.55);
+    }
+    .dialerWrapper {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        left: 0;
+        top: 50%;
+        margin-top: -250px;
+        margin-left: -250px;
+        border-radius: 50%;
+        z-index: 20;
+        .imageHolder {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: $black_60;
+            line-height: 100px;
+            text-align: center;
+            padding: 10px;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .profileText {
+            position: absolute;
+            right: -73px;
+            top: 0;
+            width: 75px;
+            height: 100%;
+            color: #fff;
+            text-align: left;
+            font-size: 14px;
+            word-break: break-all;
+            display: table;
+            span {
+                text-align: left;
+                display: table-cell;
+                vertical-align: middle;
+                word-break: break-all;
+                line-height: 16px !important;
+            }
+        }
+    }
+    .container {
+        width: 100%;
+        height: auto;
+    }
+}
+// Contact CSS START
+.borderRed {
+    border: 3px solid red !important;
+}
+.groupImage {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-right: 4%;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.groupName {
+    float: left;
+    width: 62.5%;
+    height: 66px;
+    display: table;
+    padding-right: 3%;
+    span {
+        display: table-cell;
+        white-space: normal;
+        vertical-align: middle;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #797a7b;
+    }
+}
+.accArrow {
+    color: #797a7b;
+    float: right;
+    font-size: 26px;
+    margin-top: 22px;
+}
+.infoBox {
+    width: 50%;
+    float: left;
+    .userImage {
+        width: 100%;
+        border: 1px solid green;
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+    }
+    .userName {
+        color: #1e1e1e;
+        font-size: 16px;
+    }
+    .userText {
+        white-space: normal;
+        font-size: 14px;
+        color: #8f8f94;
+        line-height: 15px;
+        margin-top: 10px;
+    }
+}
+.leftInfoBorder {
+    padding-right: 16px;
+    border-right: 2px solid #eeeeee;
+}
+.rightInfoBox {
+    padding-left: 16px;
+    border-left: 2px solid #eeeeee;
+    margin-left: -2px;
+    .emailIconWraper {
+        float: left;
+        width: 15%;
+        margin-right: 2%;
+        color: #585757;
+        font-size: 20px;
+    }
+    .emailWraper {
+        float: left;
+        width: 83%;
+        color: #585757;
+        font-size: 16px;
+        line-height: 16px;
+        white-space: normal;
+        margin-bottom: 8px;
+    }
+    .social_box {
+        .ion-social-facebook {
+            font-size: 24px;
+            color: #3b5998;
+        }
+        .ion-social-linkedin {
+            font-size: 24px;
+            color: #006dc0;
+        }
+        .ion-social-twitter {
+            font-size: 24px;
+            color: #29c5f6;
+        }
+    }
+}
+.decoration-none {
+    text-decoration: none;
+}
+.itemContactBg {
+    background: #eaeaea;
+    border-color: #ddd;
+    margin-bottom: 4px;
+    border-width: 0px;
+}
+.list {
+    .item-accordion:nth-child(2) {
+        margin-top: -4px;
+    }
+}
+.accordionBg {
+    background: #f7f7f7;
+}
+// Contact CSS ENDS
+// Category CSS START
+.categoryBg {
+    background: #f3eae4;
+    a {
+        text-decoration: none;
+        .categoryWrapper {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            padding: 16px;
+            border-radius: 50%;
+            margin-top: 50px;
+            line-height: 100px;
+            text-align: center;
+            background: #fff;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        .categoryText {
+            color: #545454;
+            font-size: 16px;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+    }
+}
+// Category CSS ENDS
+// Category-Detail CSS START
+.detailItembg {
+    background: #faf8fb;
+}
+.itemDeail {
+    background-color: transparent;
+    border-top: 0 none;
+    padding-bottom: 5px;
+    padding-top: 0;
+}
+.rowPadding16Px {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0;
+}
+.displayBlock {
+    @media only screen and (max-width:479px) {
+        display: block;
+        clear: both;
+    }
+}
+.itemImagesWrapper {
+    @media only screen and (max-width:479px) {
+        float: left;
+        width: 50%;
+    }
+}
+.itemDetailImage {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    @include border-radius(7px);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+h3.detailHeading {
+    color: #4e4e4e;
+    font-size: 30px;
+    line-height: 32px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    white-space: normal;
+}
+.colWidthAotu {
+    @include flex(0 0 0);
+}
+.detailIcon {
+    font-size: 26px;
+    color: #bebebe;
+    @include flex(0 0 35px);
+    max-width: 35px;
+}
+.detailAddres {
+    color: #717171;
+    font-size: 15px;
+    white-space: normal;
+    @include flex(auto);
+}
+.mapBtn {
+    border: 1px solid #e8ded8;
+    background: #f3eae4;
+    color: #b3a8a1;
+    font-size: 14px;
+    line-height: 30px;
+    min-height: 30px;
+    margin-top: -6px;
+}

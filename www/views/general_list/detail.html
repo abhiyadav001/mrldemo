@@ -1,0 +1,48 @@
+<ion-view view-title='{{category_name}}'>
+    <ion-content padding='true' class="categoryBg">
+        <div class="card detailItembg" ng-repeat="content in general_list_detail">
+            <div class="row rowPadding16Px displayBlock text-center">
+                <div class="col itemImagesWrapper" ng-repeat="image in content.images track by $index">
+                    <div class="itemDetailImage">{{images}}
+                    <img ng-src="{{image}}"/></div>
+                </div>
+            </div>
+            <div class="item itemDeail">
+                <div class="row row-no-padding">
+                    <div class="col">
+                        <h3 class="detailHeading">{{content.title}}</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col colWidthAotu detailIcon">
+                        <i class="ion-ios-location-outline"></i>
+                    </div>
+                    <div class="col colWidthAotu detailAddres">
+                        {{content.address}}
+                    </div>
+                    <div class="col colWidthAotu text-right">
+                        <a class="button mapBtn" ng-href="#/map/{{content.address}}">
+                            View Map
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col colWidthAotu detailIcon">
+                        <i class="ion-email"></i>
+                    </div>
+                    <div class="col colWidthAotu detailAddres">
+                        {{content.email}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col  colWidthAotu detailIcon">
+                        <i class="ion-android-phone-portrait"></i>
+                    </div>
+                    <div class="col colWidthAotu detailAddres">
+                        {{content.contact_no}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

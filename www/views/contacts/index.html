@@ -1,0 +1,62 @@
+<ion-view title="Contacts">
+    <ion-content padding="false" ng-style="{background:menu.background_color }">
+        <ion-list>
+            <div ng-repeat="(group_name, group_details) in grouped_contacts">
+                <ion-item class="item itemContactBg"
+                          ng-click="toggleGroup(group_name)"
+                          ng-class="{active: isGroupShown(group_name)}">
+                    <div class="groupImage"><img ng-src="{{group_details.icon}}"/></div>
+                    <div class="groupName"><span> {{group_name}} </span></div>
+                    <i class="icon down_up accArrow"
+                       ng-class="isGroupShown(group_name) ? 'ion-chevron-down' : 'ion-chevron-right'"></i>
+                </ion-item>
+                <ion-item class="item-accordion accordionBg"
+                          ng-repeat="contact in group_details.contacts"
+                          ng-show="isGroupShown(group_name)">
+                    <div class="row row-no-padding">
+                        <div class="col">
+                            <div class="infoBox leftInfoBorder text-center">
+                                <div class="userImage">
+                                    <img ng-if="contact.icon != ''" ng-src="img/{{contact.icon}}">
+                                    <img ng-if="contact.icon == ''" ng-src="img/def_user.jpg">
+                                </div>
+                                <span class="block userName"> <b> {{contact.first_name}}&nbsp;{{contact.last_name}}</b> </span>
+                                <span class="block userText">{{contact.description}}</span>
+                            </div>
+                            <div class="infoBox rightInfoBox">
+                                <span ng-if="contact.email != ''" class="block">
+                                    <a class="decoration-none"
+                                       ng-href="mailto:{{contact.email_id}}?subject=my%20App%20demo">
+                                        <i class="icon ion-email emailIconWraper"></i>
+                                        <span class="emailWraper">{{contact.email_id}}</span>
+                                    </a>
+                                </span>
+                                <span ng-if="contact.mobile_number != ''" class="block">
+                                    <a class="decoration-none" ng-href="tel:{{contact.contact_no}}">
+                                        <i class="icon ion-ios-telephone emailIconWraper"></i>
+                                        <span class="emailWraper"> {{contact.contact_no}}</span>
+                                    </a>
+                                </span>
+                                <span ng-if="contact.designation != ''" class="block">
+                                    <i class="icon ion-person-add emailIconWraper"></i>
+                                   <span class="emailWraper">  {{contact.designation}}</span>
+                                </span>
+                                <span class="social_box block">
+                                    <a ng-if="contact.facebook != ''" ng-click="openLink(contact.facebook_link)">
+                                        <i class="icon ion-social-facebook"></i>
+                                    </a> &nbsp;
+                                    <a ng-if="contact.linkedin != ''" ng-click="openLink(contact.linkedin)">
+                                        <i class="icon ion-social-linkedin"></i>
+                                    </a> &nbsp;
+                                    <a ng-if="contact.twitter != ''" ng-click="openLink(contact.twitter)">
+                                        <i class="icon ion-social-twitter"></i>
+                                    </a> &nbsp;
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>
